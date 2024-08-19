@@ -1,0 +1,41 @@
+:is(*, *::before, *::after) {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	font: inherit;
+	line-height: 1.5;
+	text-box-trim: both;
+	text-box-edge: cap alphabetic;
+	text-wrap: pretty;
+	text-align: justify;
+	hyphens: auto;
+	text-decoration: none;
+	overflow-wrap: break-word;
+	color: inherit;
+	background-color: transparent;
+	break-inside: avoid;
+	flex-wrap: wrap;
+}
+
+html {
+	font-family: sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+:is(img, svg, video) {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+img {
+	object-fit: cover;
+}
+
+:is(button, summary) {
+	cursor: pointer;
+}

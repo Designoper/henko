@@ -1,0 +1,49 @@
+main {
+	>div {
+		position: relative;
+	}
+
+	:is(h1, h2, h3) {
+		flex-basis: 100%;
+		grid-column: 1/-1;
+		column-span: all;
+	}
+
+	h1 {
+		width: 100%;
+		padding: 0 10vw;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1;
+	}
+
+	section {
+		display: grid;
+		gap: 2.5em 3.25em;
+		padding: 2em 10vw;
+	}
+
+	ul {
+		display: grid;
+		row-gap: 1em;
+	}
+
+	@media screen and (541px <=width) {
+		h1 {
+			padding: 0 7.5vw;
+		}
+
+		ul {
+			row-gap: 1.25em;
+		}
+	}
+
+	@media screen and (925px <=width) {
+		section {
+			padding: 3em 7.5vw;
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+}

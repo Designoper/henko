@@ -13,13 +13,8 @@ header {
         display: none;
     }
 
-    /* >[href="./"] {
-        width: 2rem;
-    } */
-
     >details {
         z-index: 2;
-        /* width: 1.25rem; */
 
         &[open] {
             +nav {
@@ -48,10 +43,6 @@ header {
 
     @media screen and (541px <=width) {
         padding: 1.35rem 10vw;
-
-        /* >details {
-            width: 1.5rem;
-        } */
     }
 
     @media screen and (925px <=width) {
@@ -71,10 +62,6 @@ header {
                 background-color: inherit;
             }
         }
-
-        /* >[href="./"] {
-            width: 3rem;
-        } */
 
         >details {
             display: none;

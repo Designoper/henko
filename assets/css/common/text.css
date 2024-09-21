@@ -1,70 +1,92 @@
 html {
-	font: 1.1rem "Inter";
+	font-size: 1.25rem;
+}
 
-	:is(h1, h2, h3) {
-		font-weight: bold;
-		text-align: center;
-		text-wrap: balance;
-		hyphens: none;
-		/* line-height: initial; */
+:is(h1, h2, h3) {
+	font-weight: bold;
+	text-align: center;
+	text-wrap: balance;
+	hyphens: none;
+	line-height: 1.3;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 1.75rem;
+}
+
+h3 {
+	font-size: 1.35rem;
+}
+
+main {
+	ul {
+		list-style: decimal inside;
+	}
+}
+
+li::marker {
+	font-weight: bold;
+}
+
+strong {
+	font-weight: bold;
+}
+
+figcaption {
+	text-align: right;
+}
+
+hgroup p {
+	text-align: center;
+	font-weight: bold;
+}
+
+@media screen and (801px <=width) {
+	html {
+		font-size: 1.2rem;
 	}
 
 	h1 {
-		font-size: 2rem;
+		font-size: 3rem;
 	}
 
 	h2 {
-		font-size: 1.5rem;
+		font-size: 2rem;
+	}
+}
+
+@media screen and (1024px <=width) {
+	html {
+		font-size: 0.9rem;
 	}
 
-	h3 {
+	h1 {
+		font-size: 3.5rem;
+	}
+
+	h2 {
+		text-align: left;
+	}
+}
+
+@media screen and (1280px <=width) {
+	html {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (1700px <=width) {
+	html {
 		font-size: 1.25rem;
 	}
+}
 
-	main {
-		ul {
-			list-style: decimal inside;
-		}
-	}
-
-	:is(li::marker, strong) {
-		font-weight: bold;
-	}
-
-	@media screen and (541px <=width) {
-		font-size: 1.25rem;
-
-		h1 {
-			font-size: 2.5rem;
-		}
-
-		h2 {
-			font-size: 1.75em;
-		}
-	}
-
-	@media screen and (925px <=width) {
-		font-size: 1.1rem;
-
-		h1 {
-			font-size: 3.5rem;
-		}
-
-		h2 {
-			font-size: 2em;
-			text-align: left;
-		}
-
-		h3 {
-			font-size: 1.5rem;
-		}
-	}
-
-	@media screen and (1400px <=width) {
-		font-size: 1.25rem;
-	}
-
-	@media screen and (1921px <=width) {
+@media screen and (1921px <=width) {
+	html {
 		font-size: 1vw;
 	}
 }

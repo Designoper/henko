@@ -1,7 +1,9 @@
 html {
-	--primary-bg: hsl(0, 0%, 95%);
-	--secondary-bg: hsl(54, 86%, 66%);
+	--primary-bg: hsl(180, 42%, 93%);
+	--secondary-bg: hsl(180, 81%, 58%);
+	/* --secondary-bg: hsl(180, 82%, 45%); */
 	--background-text: hsl(from var(--secondary-bg) h calc(s) calc(l/1.25) / 1);
+	--terciary-bg: hsl(180, 100%, 16%);
 	--text: hsl(0, 0%, 0%);
 	--text-light: hsl(0, 0%, 20%);
 
@@ -22,10 +24,14 @@ h1 {
 	color: var(--text);
 }
 
+/* h2 {
+	color: #028170;
+} */
+
 main {
 	>div {
 		img {
-			filter: brightness(50%);
+			filter: brightness(40%);
 		}
 	}
 }

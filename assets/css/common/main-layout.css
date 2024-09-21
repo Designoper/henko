@@ -1,12 +1,14 @@
 main {
+	display: grid;
+	gap: 5rem 0;
+	padding-bottom: 7rem;
+
 	>div {
 		position: relative;
-	}
 
-	:is(h1, h2, h3) {
-		flex-basis: 100%;
-		grid-column: 1/-1;
-		column-span: all;
+		img {
+			height: 375px;
+		}
 	}
 
 	h1 {
@@ -16,34 +18,58 @@ main {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		z-index: 1;
+	}
+
+	h2 {
+		flex-basis: 100%;
+		grid-column: 1/-1;
 	}
 
 	section {
 		display: grid;
-		gap: 2.5em 3.25em;
-		padding: 2em 10vw;
+		gap: 2rem 3.25rem;
+		padding: 0 10vw;
 	}
 
 	ul {
 		display: grid;
-		row-gap: 1em;
+		row-gap: 1rem;
+		column-gap: inherit;
+		column-count: 3;
+	}
+
+	figure {
+		display: grid;
+		gap: 1rem 0;
 	}
 
 	@media screen and (541px <=width) {
+		>div {
+			img {
+				height: 550px;
+			}
+		}
+	}
+
+	@media screen and (1024px <=width) {
+		>div {
+			img {
+				height: auto;
+			}
+		}
+
 		h1 {
 			padding: 0 7.5vw;
 		}
 
-		ul {
-			row-gap: 1.25em;
-		}
-	}
-
-	@media screen and (925px <=width) {
 		section {
-			padding: 3em 7.5vw;
+			padding: 0 7.5vw;
 			grid-template-columns: repeat(3, 1fr);
+			gap: 1.75rem 4rem;
+
+			>img {
+				height: 100%;
+			}
 		}
 	}
 }

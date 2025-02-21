@@ -1,0 +1,134 @@
+main {
+	section {
+		&:nth-of-type(2) {
+			p {
+				text-align: center;
+			}
+
+			h3 {
+				margin: 1.25em 0;
+			}
+
+			img {
+				width: 70%;
+				margin: auto;
+				border-radius: 50%;
+			}
+		}
+
+		&:nth-of-type(3) {
+			article {
+				padding: 0 0 2.5em;
+				border-radius: 0.5em;
+				background-color: var(--secondary-bg);
+				box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+			}
+
+			p {
+				margin: 1.75em 10%;
+			}
+
+			h3 {
+				margin: 0.75em 10%;
+			}
+
+			a {
+				display: block;
+				/* width: fit-content; */
+				background-color: var(--primary-bg);
+				margin: 0 10%;
+				text-wrap: balance;
+				text-align: center;
+				padding: 1em 1em;
+				border-radius: 0.5em;
+				transition: transform 0.5s;
+
+				&:hover {
+					transform: scale(1.07);
+				}
+			}
+
+			/* img {
+                border-radius: 0.5em 0.5em 0 0;
+            } */
+		}
+	}
+
+	@media screen and (541px <=width) {
+		section {
+			&:nth-of-type(2) {
+				display: flex;
+				justify-content: space-between;
+
+				article {
+					flex-basis: 40%;
+
+					&:nth-of-type(3) {
+						margin: auto;
+					}
+				}
+
+				img {
+					width: 80%;
+				}
+			}
+
+			&:nth-of-type(3) {
+				article {
+					width: 80%;
+					margin: auto;
+				}
+			}
+		}
+	}
+
+	@media screen and (1024px <=width) {
+		section {
+			&:nth-of-type(1) {
+				/* width: 75%; */
+				gap: 0.5em;
+				grid-template-columns: repeat(12, 1fr);
+				/* grid-template-areas:
+					"a a a a"
+					"b c d e"
+					"f g h i"; */
+				grid-template-areas:
+					"a a a a a a a a a a a a"
+					"b b b c c c c c c d d d"
+					"e e e c c c c c c f f f"
+					"g g g g h h h h i i i i";
+			}
+
+			&:nth-of-type(2) {
+				display: grid;
+				grid-template-areas:
+					"a a a"
+					"b c d";
+
+				img {
+					width: 65%;
+				}
+
+				article {
+					h3 {
+						font-size: 1.5em;
+					}
+				}
+			}
+
+			&:nth-of-type(3) {
+				grid-template-areas:
+					"a a a"
+					"b c d"
+					"e f g"
+					"h i j"
+					"k l m";
+
+				article {
+					width: 100%;
+					margin: 0;
+				}
+			}
+		}
+	}
+}

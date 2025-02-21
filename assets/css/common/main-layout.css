@@ -3,21 +3,17 @@ main {
 	gap: 5rem 0;
 	padding-bottom: 7rem;
 
-	>div {
-		position: relative;
-
-		img {
-			height: 375px;
-		}
+	>img {
+		anchor-name: --banner-img;
+		height: 375px;
 	}
 
 	h1 {
-		width: 100%;
-		padding: 0 10vw;
+		margin: 0 10vw;
 		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		position-anchor: --banner-img;
+		justify-self: anchor-center;
+		align-self: anchor-center;
 	}
 
 	h2 {
@@ -27,13 +23,13 @@ main {
 
 	section {
 		display: grid;
-		gap: 2rem 3.25rem;
+		gap: 2.5rem 3.25rem;
 		padding: 0 10vw;
 	}
 
 	ul {
 		display: grid;
-		row-gap: 1rem;
+		row-gap: 2rem;
 		column-gap: inherit;
 		column-count: 3;
 	}
@@ -43,29 +39,30 @@ main {
 		gap: 1rem 0;
 	}
 
+	hgroup {
+		display: grid;
+		gap: 0.75rem 0;
+	}
+
 	@media screen and (541px <=width) {
-		>div {
-			img {
-				height: 550px;
-			}
+		>img {
+			height: 550px;
 		}
 	}
 
 	@media screen and (1024px <=width) {
-		>div {
-			img {
-				height: auto;
-			}
+		>img {
+			height: auto;
 		}
 
 		h1 {
-			padding: 0 7.5vw;
+			margin: 0 7.5vw;
 		}
 
 		section {
 			padding: 0 7.5vw;
 			grid-template-columns: repeat(3, 1fr);
-			gap: 1.75rem 4rem;
+			gap: 2.5rem 4rem;
 
 			>img {
 				height: 100%;

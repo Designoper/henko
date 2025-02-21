@@ -1,21 +1,8 @@
 html {
-	--primary-bg: #c9ab98;
-	/* --primary-bg: #ae8b75; */
-	/* --primary-bg: #88634e; */
-
-
-	/* --secondary-bg: rgb(34, 139, 34); */
-	/* Forest Green */
-
-	/* --secondary-bg: rgb(50, 205, 50); */
-	/* Lime Green */
-	/* --secondary-bg: rgb(107, 142, 35); */
-	/* Olive Drab */
-	--secondary-bg: rgb(152, 251, 152);
-	/* Pale Green */
-	/* --secondary-bg: rgb(80, 200, 120); */
-	/* Medium Sea Green */
-	--background-text: hsl(from var(--secondary-bg) h calc(s) calc(l/1.25) / 1);
+	--primary-bg: hsl(180, 42%, 93%);
+	--secondary-bg: hsl(180, 81%, 58%);
+	/* --secondary-bg: hsl(180, 82%, 45%); */
+	--background-text: hsl(from var(--secondary-bg) h s calc(l/1.25));
 	--terciary-bg: hsl(180, 100%, 16%);
 	--text: hsl(0, 0%, 0%);
 	--text-light: hsl(0, 0%, 20%);
@@ -42,9 +29,7 @@ h1 {
 } */
 
 main {
-	>div {
-		img {
-			filter: brightness(40%);
-		}
+	>img {
+		filter: brightness(40%);
 	}
 }

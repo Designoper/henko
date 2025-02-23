@@ -1,17 +1,12 @@
 main {
-
-    @media screen and (541px <=width) {
-        section {}
+    img {
+        min-height: 250px;
     }
 }
 
 @media screen and (1024px <=width) {
     section {
         &:nth-of-type(1) {
-            /* overflow: hidden; */
-            align-items: stretch;
-            /* grid-auto-rows: min-content;
-                grid-template-columns: 1fr 1fr 1fr; */
             grid-template-areas:
                 "a a a"
                 "b e e"
@@ -20,22 +15,11 @@ main {
         }
 
         &:nth-of-type(2) {
-            /* display: grid; */
             grid-template-areas:
                 "a a a"
                 "e e b"
                 "e e c"
                 "e e d";
-
-            /* img {
-                    width: 65%;
-                } */
-
-            /* article {
-                    h3 {
-                        font-size: 1.5em;
-                    }
-                } */
         }
     }
 }

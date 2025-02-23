@@ -20,6 +20,10 @@ main {
                 "e e b"
                 "e e c"
                 "e e d";
+
+            h2 {
+                text-align: right;
+            }
         }
     }
 }

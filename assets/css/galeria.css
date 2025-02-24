@@ -1,4 +1,74 @@
 main {
+	@media screen and (541px <=width) {
+		section {
+			&:nth-of-type(1) {
+				gap: 0.5em;
+				grid-template-columns: repeat(6, 1fr);
+				grid-template-areas:
+					"a a a a a a"
+					"b b b c c c"
+					"d e f g h i"
+					". . . . . .";
+			}
+
+			&>:nth-child(1) {
+				grid-area: a;
+			}
+
+			&>:nth-child(2) {
+				grid-area: b;
+			}
+
+			&>:nth-child(3) {
+				grid-area: c;
+			}
+
+			&>:nth-child(4) {
+				grid-area: d;
+			}
+
+			&>:nth-child(5) {
+				grid-area: e;
+			}
+
+			&>:nth-child(6) {
+				grid-area: f;
+			}
+
+			&>:nth-child(7) {
+				grid-area: g;
+			}
+
+			&>:nth-child(8) {
+				grid-area: h;
+			}
+
+			&>:nth-child(9) {
+				grid-area: i;
+			}
+
+			&>:nth-child(10) {
+				grid-area: j;
+			}
+
+			&>:nth-child(11) {
+				grid-area: k;
+			}
+
+			&>:nth-child(12) {
+				grid-area: l;
+			}
+
+			&>:nth-child(13) {
+				grid-area: m;
+			}
+
+			&>:nth-child(14) {
+				grid-area: n;
+			}
+		}
+	}
+
 	@media screen and (1024px <=width) {
 		section {
 			&:nth-of-type(1) {

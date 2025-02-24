@@ -2,13 +2,16 @@ main {
 	@media screen and (541px <=width) {
 		section {
 			&:nth-of-type(1) {
+				h2{
+					margin-bottom: 1.5em;
+				}
 				gap: 0.5em;
 				grid-template-columns: repeat(6, 1fr);
 				grid-template-areas:
 					"a a a a a a"
-					"b b b c c c"
-					"d e f g h i"
-					". . . . . .";
+					"b b . . c c"
+					"b b d e c c"
+					". f g h i .";
 			}
 
 			&>:nth-child(1) {

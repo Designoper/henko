@@ -16,7 +16,7 @@ header {
             display: none;
         }
 
-        >[href="./"] {
+        >[href="./index.html"] {
             width: 3rem;
         }
 
@@ -106,7 +106,7 @@ header {
                 }
             }
 
-            >[href="./"] {
+            >[href="./index.html"] {
                 width: 3.5rem;
             }
 
